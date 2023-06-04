@@ -8,18 +8,18 @@ import {
   FormControlLabel,
   TextField,
   Typography,
-} from "@mui/material";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+} from '@mui/material'
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 function Login() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
+    event.preventDefault()
+    const data = new FormData(event.currentTarget)
     console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-  };
+      email: data.get('email'),
+      password: data.get('password'),
+    })
+  }
 
   return (
     <Container component="main" maxWidth="xs">
@@ -27,12 +27,12 @@ function Login() {
       <Box
         sx={{
           marginTop: 8,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       >
-        <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
@@ -74,7 +74,7 @@ function Login() {
         </Box>
       </Box>
     </Container>
-  );
+  )
 }
 
-export default Login;
+export default Login

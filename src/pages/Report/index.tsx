@@ -1,5 +1,5 @@
 function Report() {
-  return <div>보고서 메인</div>;
+  return <div>보고서 메인</div>
 }
 
-export default Report;
+export default Report
